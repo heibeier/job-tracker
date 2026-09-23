@@ -1,0 +1,13 @@
+# 统一换行符：仓库内一律存 LF，检出时也保持 LF。
+# 不这么做的话，Windows 上提交会把整个文件标成 CRLF，之后任何 diff 都变成"整文件改动"。
+* text=auto eol=lf
+
+# 二进制文件不参与任何转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.exe  binary
+*.woff binary
+*.woff2 binary
